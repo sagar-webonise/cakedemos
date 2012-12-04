@@ -1,8 +1,19 @@
 <?php
-/**
- * Created by JetBrains PhpStorm.
- * User: webonise
- * Date: 4/12/12
- * Time: 2:57 PM
- * To change this template use File | Settings | File Templates.
- */
+App::uses('AppController', 'Controller');
+
+class PhpsController extends AppController
+{
+
+    /*
+     * Created By : Sagar Shirsath
+     * Emial : sagars@weboniselab.com
+     * created on : 4/12/2012
+     * method name: index()
+     *
+     */
+
+    public function index(){
+
+    }
+
+}

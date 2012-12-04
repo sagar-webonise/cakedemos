@@ -1,7 +1,7 @@
 <?php
-App::uses('AppController', 'Controller');
+    App::uses('AppController', 'Controller');
 
-class JavascriptsController extends AppController
+class CmsController extends AppController
 {
 
     /*
@@ -9,7 +9,6 @@ class JavascriptsController extends AppController
      * Emial : sagars@weboniselab.com
      * created on : 4/12/2012
      * method name: index()
-     *
      */
 
     public function index(){
