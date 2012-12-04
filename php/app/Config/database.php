@@ -62,11 +62,11 @@ class DATABASE_CONFIG {
         public $default = array(
                 'datasource' => 'Database/Mysql',
                 'persistent' => false,
-                'host'       => '',
+                'host'       => 'localhost',
                 'port'       => '',
-                'login'      => '',
-                'password'   => '',
-                'database'   => '',
+                'login'      => 'root',
+                'password'   => 'webonise6186',
+                'database'   => 'cakedemos',
                 'prefix'     => '',
                 //'encoding' => 'utf8',
         );
