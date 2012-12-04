@@ -20,7 +20,7 @@
  */
 
 // This is where we define the OpenShift specific secure variable functions
-require_once('openshift.inc');
+//require_once('openshift.inc');
 
 // Set the default keys to use
 $_default_keys = array(
@@ -55,7 +55,7 @@ function make_secure_key($args) {
 }
 
 // Generate OpenShift secure keys (or return defaults if not on OpenShift)
-$key_list = openshift_secure($_default_keys,'make_secure_key');
+$key_list = "dfdsfwerfsdfsadfasadwwe";
 
 /**
  * CakePHP Debug Level:
