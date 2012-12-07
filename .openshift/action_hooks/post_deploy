@@ -10,4 +10,5 @@
  ln -s $OPENSHIFT_DATA_DIR"server_setup/database.php"  $OPENSHIFT_REPO_DIR"php/app/Config/database.php"
 
  cd $OPENSHIFT_REPO_DIR"php/app/"
+
  Console/cake Migrations.migration run all
