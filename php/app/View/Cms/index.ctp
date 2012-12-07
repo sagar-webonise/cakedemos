@@ -4,4 +4,3 @@
 <?php echo $this->Html->link('Php Related',array('controller'=>'phps','action'=>'index'));?><br/>
 <?php echo $this->Html->link('Api Related',array('controller'=>'apis','action'=>'index'));?><br/>
 
-    Check
