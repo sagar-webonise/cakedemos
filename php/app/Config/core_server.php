@@ -20,7 +20,7 @@
  */
 
 // This is where we define the OpenShift specific secure variable functions
-require_once('openshift.inc');
+//require_once('openshift.inc');
 
 // Set the default keys to use
 $_default_keys = array(
@@ -55,7 +55,7 @@ function make_secure_key($args) {
 }
 
 // Generate OpenShift secure keys (or return defaults if not on OpenShift)
-$key_list = openshift_secure($_default_keys,'make_secure_key');
+//$key_list = openshift_secure($_default_keys,'make_secure_key');
 
 /**
  * CakePHP Debug Level:
@@ -222,12 +222,12 @@ $key_list = openshift_secure($_default_keys,'make_secure_key');
 /**
  * A random string used in security hashing methods.
  */
-	Configure::write('Security.salt', $key_list['Security.salt']);
+	Configure::write('Security.salt', "dasdsadwnedqeh82sdndsadwqeqw");
 
 /**
  * A random numeric string (digits only) used to encrypt/decrypt strings.
  */
-	Configure::write('Security.cipherSeed', $key_list['Security.cipherSeed']);
+	Configure::write('Security.cipherSeed', "3213213213232137523722112343");
 
 /**
  * Apply timestamps with the last modified time to static assets (js, css, images).
