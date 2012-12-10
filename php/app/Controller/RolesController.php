@@ -1,5 +1,6 @@
 <?php
 App::uses('AppController', 'Controller');
+App::uses('CakeEmail', 'Network/Email');
 /**
  * Roles Controller
  *
@@ -101,6 +102,16 @@ class RolesController extends AppController {
        $this->autoRender = false;
        $this->Role->create();
        $this->Role->save(array('name'=>"Testtt",'is_active'=>1));
-        return true;
+
+      return true;
+    }
+
+    public function auto_send_mails(){
+        $email = new CakeEmail();
+        $email->from(array('sagar.shirsath2009@gmail.com' => 'Only Me'));
+        $email->to(array('kiran.bhalerao20@gmail.com','sagar@yopmail.com'));
+        $email->subject('Warm Good Morning');
+        $email->send('Hey hi kirnya this is just to inform you good Morning :)');
+
     }
 }
