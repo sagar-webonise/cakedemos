@@ -16,4 +16,10 @@ class PhpsController extends AppController
 
     }
 
+    public function crunchable(){
+        $data = file_get_contents('http://api.crunchbase.com/v/1/company/emapia.js?api_key=3qaeu2t5v3594e9qsjjbfqcw');
+        pr(json_decode($data));
+        die;
+    }
+
 }
