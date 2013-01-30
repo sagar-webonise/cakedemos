@@ -110,7 +110,7 @@ class RolesController extends AppController {
         $email = new CakeEmail();
         $email->from(array('sagar.shirsath2009@gmail.com' => 'Only Me'));
         $email->to(array('kiran.bhalerao20@gmail.com','sagar@yopmail.com'));
-        $email->subject('Warm Good Morning');
+        $email->subject('Happy Birth Day Kirnya :)');
         $email->send('Hey hi kirnya this is just to inform you good Morning :)');
 
     }

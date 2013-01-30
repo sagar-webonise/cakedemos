@@ -1,8 +1,7 @@
 <?php
 App::uses('AppController', 'Controller');
 
-class ApisController extends AppController
-{
+class ApisController extends AppController {
 
     /*
      * Created By : Sagar Shirsath
@@ -12,7 +11,7 @@ class ApisController extends AppController
      * method name: index()
      */
 
-    public function index(){
+    public function index() {
 
     }
 
