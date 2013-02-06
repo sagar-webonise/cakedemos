@@ -109,9 +109,10 @@ class RolesController extends AppController {
     public function auto_send_mails(){
         $email = new CakeEmail();
         $email->from(array('sagar.shirsath2009@gmail.com' => 'Only Me'));
-        $email->to(array('kiran.bhalerao20@gmail.com','sagar@yopmail.com'));
+        $email->to(array('sagar@yopmail.com'));
         $email->subject('Happy Birth Day Kirnya :)');
-        $email->send('Happy Birth Day Kirnya  :) ');
+        $email->send($this->request->data);
 
     }
+
 }
