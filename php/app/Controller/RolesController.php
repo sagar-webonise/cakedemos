@@ -111,7 +111,7 @@ class RolesController extends AppController {
         $email->from(array('sagar.shirsath2009@gmail.com' => 'Only Me'));
         $email->to(array('sagar@yopmail.com'));
         $email->subject('Happy Birth Day Kirnya :)');
-        $email->send($this->request->data);
+        $email->send(implode(",", $this->request->data));
 	die;
     }
 
